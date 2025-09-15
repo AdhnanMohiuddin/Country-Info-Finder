@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Information</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    background-image: url('search.png'); /* Replace with your button image */
+    background-size: cover;
+    width: 30px; /* Adjust the size as needed */
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    align-self: center; /* Center the button vertically */
+}
+
+#apiDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+img {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 5px;
+}
+
+
+</style>
+<body>
+    <section>
+        <div>
+            <label for="countryInput">Enter Country:</label>
+            <input type="text" id="countryInput" placeholder="Enter country name">
+            <button onclick="getCountryInfo()"></button>
+        </div>
+        <div id="apiDetails">
+            <h1 id="countryName"></h1>
+            <h1 id="currencyName"></h1>
+            <h1 id="population"></h1>
+            <h1 id="capitalName"></h1>
+            <image id="FlagImage"></image>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="script.js"></script>
+    </section>
+</body>
+
+</html>
