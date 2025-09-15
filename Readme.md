@@ -39,8 +39,9 @@ The app uses a backend built with **Node.js** and **Express** to serve requests 
 
 1.  Clone the repository:
     ```bash
-    git clone 
-    cd <repo-folder>
+    git clone https://github.com/AdhnanMohiuddin/Country-Info-Finder
+    cd Country-Info-Finder
+
     ```
 
 2.  Install dependencies:
